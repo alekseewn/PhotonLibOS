@@ -81,6 +81,8 @@ if (PHOTON_BUILD_WITH_ASAN)
     add_link_options(-fsanitize=address -static-libasan)
 endif ()
 
+add_compile_options(-w)
+
 set(CMAKE_CXX_STANDARD ${PHOTON_CXX_STANDARD})
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
